@@ -3,7 +3,7 @@ import { increaseCount, decreaseCount } from '../../store/actions'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-export const Counter = ({ count, increaseCount, decreaseCount }) => {
+const Counter = ({ count, increaseCount, decreaseCount }) => {
     return <div>
         <button onClick={decreaseCount}>-</button>
         {count}
@@ -12,7 +12,7 @@ export const Counter = ({ count, increaseCount, decreaseCount }) => {
 }
 
 const mapStatetoProps = state => ({
-    count: state.count
+    count: state.counter.count
 })
 
 // 1 - метод
