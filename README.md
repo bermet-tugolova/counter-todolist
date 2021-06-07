@@ -1,2 +1,2 @@
 # counter-todolist
-react+redux
+___react+redux___
